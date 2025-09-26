@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "Abdoul Aziz TRAORÉ | Ingénieur Analytics",
+    "description": "Site portfolio présentant les travaux et l'expertise en ingénierie d'analyse de données"
+  },
+  "personal": {
+    "name": "Abdoul Aziz TRAORÉ",
+    "title": "Ingénieur Analytics",
+    "location": "Longjumeau (91160), France",
+    "avatar": "/confident-professional.png",
+    "email": "abdoulaziztraore1997@gmail.com",
+    "phone": "06 34 16 72 81",
+    "workingHours": "Lundi - Vendredi, 9h - 18h CET",
+    "availableForWork": true,
+    "badges": ["Analyse de Données", "Intelligence d'Affaires", "Ingénierie de Données"],
+    "social": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/abdoul-aziz-traore",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "GitHub",
+        "url": "#",
+        "icon": "Github"
+      }
+    ]
+  },
+  "about": {
+    "bio": "Ingénieur Analytics expérimenté spécialisé dans l'entreposage de données, l'intelligence d'affaires et la visualisation de données. Passionné par la transformation de données brutes en insights actionnables avec une expertise des plateformes cloud et des technologies de pile de données modernes.",
+    "focus": [
+      "Construction de pipelines de données évolutifs et de processus ETL",
+      "Création de tableaux de bord interactifs et de visualisations de données",
+      "Mise en œuvre de cadres de gouvernance et de qualité des données",
+      "Direction d'équipes de données et gestion de projets d'analyse"
+    ],
+    "languages": [
+      {
+        "name": "Français",
+        "proficiency": "Langue maternelle",
+        "level": 100,
+        "flag": "🇫🇷"
+      },
+      {
+        "name": "Anglais",
+        "proficiency": "Intermédiaire",
+        "level": 70,
+        "flag": "🇺🇸"
+      }
+    ],
+    "interests": ["Technologie des Données", "Lecture", "Scrabble", "Veille Technologique"]
+  },
+  "navigation": [
+    {
+      "label": "Accueil",
+      "href": "/"
+    },
+    {
+      "label": "Expérience",
+      "href": "#experience"
+    },
+    {
+      "label": "Diplômes",
+      "href": "#credentials"
+    },
+    {
+      "label": "Compétences",
+      "href": "#skills"
+    },
+    {
+      "label": "Projets",
+      "href": "#projects"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Ingénieur Analytics de Données & Gestion de Projet",
+      "company": "OSTRA",
+      "period": "Décembre 2024 - Présent",
+      "description": "Direction d'équipe de données et mise en œuvre de solutions de gouvernance de données complètes pour le traitement de données médicales tout en assurant la conformité RGPD et les standards de santé HL7.",
+      "achievements": [
+        "Mise en œuvre d'un cadre de gouvernance des données utilisant Azure Purview pour la gestion de la qualité des données",
+        "Conception et déploiement d'architectures de flux de données inter-applications",
+        "Automatisation des processus de reporting utilisant Power Automate et l'orchestration Logic Apps",
+        "Construction de solutions Power BI complètes pour la visualisation de données médicales"
+      ],
+      "technologies": [
+        "Azure SQL Server",
+        "Azure Data Factory",
+        "Power BI",
+        "Logic Apps",
+        "Azure Purview",
+        "SQL",
+        "APIs"
+      ]
+    },
+    {
+      "title": "Analyste de Données & Gestion de Projet",
+      "company": "Frequencies",
+      "period": "Octobre 2023 - Octobre 2024",
+      "description": "Gestion des opérations d'équipe de données et développement de solutions d'analyse complètes pour identifier les audiences cibles et mesurer l'efficacité des campagnes.",
+      "achievements": [
+        "Développement de scripts Python et SQL pour unifier les données de sources internes et externes",
+        "Création de visualisations interactives pour identifier les démographies cibles et optimiser les actions",
+        "Mise en œuvre de rapports mensuels automatisés et distribution régulière de rapports",
+        "Analyse des retours clients et bénéficiaires pour une gestion efficace des activités"
+      ],
+      "technologies": ["Python", "SQL", "Visualisation de Données", "ETL", "Automatisation de Rapports"]
+    },
+    {
+      "title": "Analyste de Données",
+      "company": "BNP PARIBAS",
+      "period": "Septembre 2020 - Septembre 2023",
+      "description": "Travail dans plusieurs équipes incluant l'infrastructure BP2I, la gestion d'incidents CSM et les services ODM, axé sur l'analyse de données, le développement de tableaux de bord et l'automatisation de processus.",
+      "achievements": [
+        "Standardisation des processus COS et COPIL dans toutes les unités métier CSM utilisant Tableau",
+        "Migration des tableaux de bord existants vers Tableau Desktop et automatisation du traitement des données",
+        "Mise en œuvre de solutions d'extraction de données API et tableaux de bord de surveillance utilisant Python",
+        "Création de tableaux de bord QoS complets pour la surveillance d'infrastructure et l'usage DevOps",
+        "Établissement de processus de surveillance et maintenance de la qualité des données"
+      ],
+      "technologies": ["Tableau", "SQL", "Python", "ServiceNow", "Dataiku", "PostgreSQL", "APIs", "JSON", "JIRA"]
+    }
+  ],
+  "credentials": {
+    "certifications": [
+      {
+        "name": "Microsoft PL-300",
+        "issuer": "Microsoft",
+        "date": "2024",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Dataiku Core",
+        "issuer": "Dataiku",
+        "date": "2023",
+        "logo": "/generic-art-school-logo.png"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master 2 Informatique MIAGE OSIE",
+        "institution": "Université Picardie Jules Verne",
+        "year": "2017-2022",
+        "logo": "/calarts-logo.png"
+      },
+      {
+        "degree": "Certification Ingénieur Analytics",
+        "institution": "Datascientest Paris",
+        "year": "2023",
+        "logo": "/nng-logo.png"
+      }
+    ],
+    "skills": [
+      "Entreposage de Données",
+      "Intelligence d'Affaires",
+      "ETL/ELT",
+      "Visualisation de Données",
+      "Plateformes Cloud",
+      "Gouvernance de Données",
+      "Gestion de Projet",
+      "Leadership d'Équipe"
+    ]
+  },
+  "technicalSkills": {
+    "design": ["Power BI", "Tableau", "QlikSense", "Visualisation de Données", "Conception de Tableaux de Bord", "Reporting"],
+    "development": ["Python", "SQL", "PostgreSQL", "Oracle", "Unix/Shell", "VBA", "DAX", "APIs"],
+    "uxMethods": [
+      "Entreposage de Données",
+      "Processus ETL/ELT",
+      "Modélisation de Données",
+      "Intelligence d'Affaires",
+      "Qualité des Données",
+      "Gouvernance de Données"
+    ],
+    "softSkills": [
+      "Gestion de Projet",
+      "Leadership d'Équipe",
+      "Méthodologie Agile",
+      "Communication Client",
+      "Résolution de Problèmes"
+    ]
+  }
+}
