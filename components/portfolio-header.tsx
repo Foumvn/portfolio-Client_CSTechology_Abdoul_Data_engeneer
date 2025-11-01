@@ -45,79 +45,93 @@ export function PortfolioHeader() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [navItems])
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [mobileMenuOpen])
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen)
   }
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
-        scrolled ? "bg-zinc-900/90 backdrop-blur-md shadow-md py-2" : "bg-transparent",
-      )}
-    >
-      <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* Logo/Name */}
-        <Link href="/" className="flex items-center group">
-          <div className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-bold text-xl relative overflow-hidden transition-transform duration-300 group-hover:scale-105">
-            {personalInfo.name}
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
-          </div>
-          <span className="text-zinc-400 text-sm ml-2 hidden sm:inline-block transition-all duration-300 group-hover:text-zinc-300">
-            / {personalInfo.title}
-          </span>
-        </Link>
+    <>
+      <header
+        className={cn(
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4",
+          scrolled ? "bg-zinc-900/90 backdrop-blur-md shadow-md py-2" : "bg-transparent",
+        )}
+      >
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          {/* Logo/Name */}
+          <Link href="/" className="flex items-center group">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 font-bold text-xl relative overflow-hidden transition-transform duration-300 group-hover:scale-105">
+              {personalInfo.name}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            </div>
+            <span className="text-zinc-400 text-sm ml-2 hidden sm:inline-block transition-all duration-300 group-hover:text-zinc-300">
+              / {personalInfo.title}
+            </span>
+          </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {navItems.map((item) => {
-            const isActive = item.href === "/" ? activeSection === "" : activeSection === item.href.substring(1)
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-1">
+            {navItems.map((item) => {
+              const isActive = item.href === "/" ? activeSection === "" : activeSection === item.href.substring(1)
 
-            return (
-              <Link
-                key={item.label}
-                href={item.href}
-                className={cn(
-                  "px-3 py-2 text-sm relative group transition-all duration-300",
-                  isActive ? "text-cyan-400" : "text-zinc-400 hover:text-white",
-                )}
-              >
-                <span className="relative z-10">{item.label}</span>
-
-                {/* Hover effect - subtle background glow */}
-                <span className="absolute inset-0 bg-cyan-500/0 rounded-md group-hover:bg-cyan-500/10 transition-all duration-300"></span>
-
-                {/* Hover effect - bottom border */}
-                <span
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
                   className={cn(
-                    "absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-4/5",
-                    isActive && "w-4/5",
+                    "px-3 py-2 text-sm relative group transition-all duration-300",
+                    isActive ? "text-cyan-400" : "text-zinc-400 hover:text-white",
                   )}
-                ></span>
-              </Link>
-            )
-          })}
-        </nav>
+                >
+                  <span className="relative z-10">{item.label}</span>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-zinc-400 hover:text-white transition-colors duration-300 relative overflow-hidden group"
-          onClick={toggleMobileMenu}
-          aria-label="Toggle menu"
-        >
-          <span className="relative z-10">{mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}</span>
-          <span className="absolute inset-0 scale-0 rounded-full bg-zinc-700/50 group-hover:scale-100 transition-transform duration-300"></span>
-        </button>
-      </div>
+                  {/* Hover effect - subtle background glow */}
+                  <span className="absolute inset-0 bg-cyan-500/0 rounded-md group-hover:bg-cyan-500/10 transition-all duration-300"></span>
+
+                  {/* Hover effect - bottom border */}
+                  <span
+                    className={cn(
+                      "absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-300 group-hover:w-4/5",
+                      isActive && "w-4/5",
+                    )}
+                  ></span>
+                </Link>
+              )
+            })}
+          </nav>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-zinc-400 hover:text-white transition-colors duration-300 relative overflow-hidden group z-[60]"
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
+          >
+            <span className="relative z-10">{mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}</span>
+            <span className="absolute inset-0 scale-0 rounded-full bg-zinc-700/50 group-hover:scale-100 transition-transform duration-300"></span>
+          </button>
+        </div>
+      </header>
 
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 bg-black/95 z-40 flex flex-col pt-20 px-4 md:hidden transition-all duration-500",
-          mobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none",
+          "fixed top-0 right-0 bottom-0 w-[70%] bg-zinc-900/98 backdrop-blur-md z-[55] flex flex-col items-center justify-center px-6 md:hidden transition-all duration-500 shadow-2xl",
+          mobileMenuOpen ? "translate-x-0 opacity-100 visible" : "translate-x-full opacity-0 invisible",
         )}
       >
-        <nav className="flex flex-col space-y-4">
+        <nav className="flex flex-col space-y-2 w-full max-w-sm">
           {navItems.map((item, index) => {
             const isActive = item.href === "/" ? activeSection === "" : activeSection === item.href.substring(1)
 
@@ -126,22 +140,23 @@ export function PortfolioHeader() {
                 key={item.label}
                 href={item.href}
                 className={cn(
-                  "px-3 py-4 text-lg border-b border-zinc-800 relative group transition-all duration-300",
-                  isActive ? "text-cyan-400 border-cyan-400/30" : "text-zinc-300 hover:text-white hover:pl-5",
+                  "px-6 py-4 text-lg border-b border-zinc-800 relative group transition-all duration-300 rounded-lg",
+                  isActive
+                    ? "text-cyan-400 border-cyan-400/30 bg-cyan-400/5"
+                    : "text-zinc-300 hover:text-white hover:bg-zinc-800/50",
+                  mobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-8 opacity-0",
                 )}
-                onClick={() => setMobileMenuOpen(false)}
                 style={{
-                  transitionDelay: `${index * 50}ms`,
-                  transform: mobileMenuOpen ? "translateX(0)" : "translateX(20px)",
-                  opacity: mobileMenuOpen ? 1 : 0,
+                  transitionDelay: mobileMenuOpen ? `${index * 50}ms` : "0ms",
                 }}
+                onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="relative z-10">{item.label}</span>
+                <span className="relative z-10 font-medium">{item.label}</span>
 
                 {/* Hover effect - left border accent */}
                 <span
                   className={cn(
-                    "absolute left-0 top-1/2 -translate-y-1/2 w-0 h-1/2 bg-gradient-to-b from-cyan-400/20 to-blue-500/20 transition-all duration-300 group-hover:w-1",
+                    "absolute left-0 top-1/2 -translate-y-1/2 w-0 h-1/2 bg-gradient-to-b from-cyan-400 to-blue-500 rounded-r transition-all duration-300 group-hover:w-1",
                     isActive && "w-1",
                   )}
                 ></span>
@@ -150,6 +165,13 @@ export function PortfolioHeader() {
           })}
         </nav>
       </div>
-    </header>
+
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[54] md:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+    </>
   )
 }

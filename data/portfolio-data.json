@@ -1,18 +1,18 @@
 {
   "meta": {
-    "title": "Abdoul Aziz TRAORÉ | Ingénieur Analytics",
-    "description": "Site portfolio présentant les travaux et l'expertise en ingénierie d'analyse de données"
+    "title": "Abdoul Aziz TRAORÉ | Analytics Engineer",
+    "description": "Portfolio website showcasing data analytics engineering work and expertise"
   },
   "personal": {
     "name": "Abdoul Aziz TRAORÉ",
-    "title": "Ingénieur Analytics",
+    "title": "Analytics Engineer",
     "location": "Longjumeau (91160), France",
     "avatar": "/confident-professional.png",
     "email": "abdoulaziztraore1997@gmail.com",
     "phone": "06 34 16 72 81",
-    "workingHours": "Lundi - Vendredi, 9h - 18h CET",
+    "workingHours": "Monday - Friday, 9am - 6pm CET",
     "availableForWork": true,
-    "badges": ["Analyse de Données", "Intelligence d'Affaires", "Ingénierie de Données"],
+    "badges": ["Data Analytics", "Business Intelligence", "Data Engineering"],
     "social": [
       {
         "platform": "LinkedIn",
@@ -27,62 +27,62 @@
     ]
   },
   "about": {
-    "bio": "Ingénieur Analytics expérimenté spécialisé dans l'entreposage de données, l'intelligence d'affaires et la visualisation de données. Passionné par la transformation de données brutes en insights actionnables avec une expertise des plateformes cloud et des technologies de pile de données modernes.",
+    "bio": "Experienced Analytics Engineer specializing in data warehousing, business intelligence, and data visualization. Passionate about transforming raw data into actionable insights with expertise in cloud platforms and modern data stack technologies.",
     "focus": [
-      "Construction de pipelines de données évolutifs et de processus ETL",
-      "Création de tableaux de bord interactifs et de visualisations de données",
-      "Mise en œuvre de cadres de gouvernance et de qualité des données",
-      "Direction d'équipes de données et gestion de projets d'analyse"
+      "Building scalable data pipelines and ETL processes",
+      "Creating interactive dashboards and data visualizations",
+      "Implementing data governance and quality frameworks",
+      "Leading data teams and managing analytics projects"
     ],
     "languages": [
       {
-        "name": "Français",
-        "proficiency": "Langue maternelle",
+        "name": "French",
+        "proficiency": "Native",
         "level": 100,
         "flag": "🇫🇷"
       },
       {
-        "name": "Anglais",
-        "proficiency": "Intermédiaire",
+        "name": "English",
+        "proficiency": "Intermediate",
         "level": 70,
         "flag": "🇺🇸"
       }
     ],
-    "interests": ["Technologie des Données", "Lecture", "Scrabble", "Veille Technologique"]
+    "interests": ["Data Technology", "Reading", "Scrabble", "Technology Watch"]
   },
   "navigation": [
     {
-      "label": "Accueil",
+      "label": "Home",
       "href": "/"
     },
     {
-      "label": "Expérience",
+      "label": "Experience",
       "href": "#experience"
     },
     {
-      "label": "Diplômes",
+      "label": "Credentials",
       "href": "#credentials"
     },
     {
-      "label": "Compétences",
+      "label": "Skills",
       "href": "#skills"
     },
     {
-      "label": "Projets",
+      "label": "Projects",
       "href": "#projects"
     }
   ],
   "experience": [
     {
-      "title": "Ingénieur Analytics de Données & Gestion de Projet",
+      "title": "Data Analytics Engineer & Project Management",
       "company": "OSTRA",
-      "period": "Décembre 2024 - Présent",
-      "description": "Direction d'équipe de données et mise en œuvre de solutions de gouvernance de données complètes pour le traitement de données médicales tout en assurant la conformité RGPD et les standards de santé HL7.",
+      "period": "December 2024 - Present",
+      "description": "Leading data team and implementing comprehensive data governance solutions for medical data processing while ensuring RGPD compliance and HL7 health standards.",
       "achievements": [
-        "Mise en œuvre d'un cadre de gouvernance des données utilisant Azure Purview pour la gestion de la qualité des données",
-        "Conception et déploiement d'architectures de flux de données inter-applications",
-        "Automatisation des processus de reporting utilisant Power Automate et l'orchestration Logic Apps",
-        "Construction de solutions Power BI complètes pour la visualisation de données médicales"
+        "Implemented data governance framework using Azure Purview for data quality management",
+        "Designed and deployed inter-application data flow architectures",
+        "Automated reporting processes using Power Automate and Logic Apps orchestration",
+        "Built comprehensive Power BI solutions for medical data visualization"
       ],
       "technologies": [
         "Azure SQL Server",
@@ -95,29 +95,29 @@
       ]
     },
     {
-      "title": "Analyste de Données & Gestion de Projet",
+      "title": "Data Analyst & Project Management",
       "company": "Frequencies",
-      "period": "Octobre 2023 - Octobre 2024",
-      "description": "Gestion des opérations d'équipe de données et développement de solutions d'analyse complètes pour identifier les audiences cibles et mesurer l'efficacité des campagnes.",
+      "period": "October 2023 - October 2024",
+      "description": "Managed data team operations and developed comprehensive analytics solutions to identify target audiences and measure campaign effectiveness.",
       "achievements": [
-        "Développement de scripts Python et SQL pour unifier les données de sources internes et externes",
-        "Création de visualisations interactives pour identifier les démographies cibles et optimiser les actions",
-        "Mise en œuvre de rapports mensuels automatisés et distribution régulière de rapports",
-        "Analyse des retours clients et bénéficiaires pour une gestion efficace des activités"
+        "Developed Python and SQL scripts to unify data from internal and external sources",
+        "Created interactive visualizations to identify target demographics and optimize actions",
+        "Implemented automated monthly reporting and regular report distribution",
+        "Analyzed customer and beneficiary feedback for effective activity management"
       ],
-      "technologies": ["Python", "SQL", "Visualisation de Données", "ETL", "Automatisation de Rapports"]
+      "technologies": ["Python", "SQL", "Data Visualization", "ETL", "Reporting Automation"]
     },
     {
-      "title": "Analyste de Données",
+      "title": "Data Analyst",
       "company": "BNP PARIBAS",
-      "period": "Septembre 2020 - Septembre 2023",
-      "description": "Travail dans plusieurs équipes incluant l'infrastructure BP2I, la gestion d'incidents CSM et les services ODM, axé sur l'analyse de données, le développement de tableaux de bord et l'automatisation de processus.",
+      "period": "September 2020 - September 2023",
+      "description": "Worked across multiple teams including BP2I infrastructure, CSM incident management, and ODM services, focusing on data analysis, dashboard development, and process automation.",
       "achievements": [
-        "Standardisation des processus COS et COPIL dans toutes les unités métier CSM utilisant Tableau",
-        "Migration des tableaux de bord existants vers Tableau Desktop et automatisation du traitement des données",
-        "Mise en œuvre de solutions d'extraction de données API et tableaux de bord de surveillance utilisant Python",
-        "Création de tableaux de bord QoS complets pour la surveillance d'infrastructure et l'usage DevOps",
-        "Établissement de processus de surveillance et maintenance de la qualité des données"
+        "Standardized COS and COPIL processes across all CSM business units using Tableau",
+        "Migrated existing dashboards to Tableau Desktop and automated data processing",
+        "Implemented API data extraction solutions and monitoring dashboards using Python",
+        "Created comprehensive QoS dashboards for infrastructure monitoring and DevOps usage",
+        "Established data quality monitoring and maintenance processes"
       ],
       "technologies": ["Tableau", "SQL", "Python", "ServiceNow", "Dataiku", "PostgreSQL", "APIs", "JSON", "JIRA"]
     }
@@ -145,40 +145,40 @@
         "logo": "/calarts-logo.png"
       },
       {
-        "degree": "Certification Ingénieur Analytics",
+        "degree": "Analytics Engineer Certification",
         "institution": "Datascientest Paris",
         "year": "2023",
         "logo": "/nng-logo.png"
       }
     ],
     "skills": [
-      "Entreposage de Données",
-      "Intelligence d'Affaires",
+      "Data Warehousing",
+      "Business Intelligence",
       "ETL/ELT",
-      "Visualisation de Données",
-      "Plateformes Cloud",
-      "Gouvernance de Données",
-      "Gestion de Projet",
-      "Leadership d'Équipe"
+      "Data Visualization",
+      "Cloud Platforms",
+      "Data Governance",
+      "Project Management",
+      "Team Leadership"
     ]
   },
   "technicalSkills": {
-    "design": ["Power BI", "Tableau", "QlikSense", "Visualisation de Données", "Conception de Tableaux de Bord", "Reporting"],
+    "design": ["Power BI", "Tableau", "QlikSense", "Data Visualization", "Dashboard Design", "Reporting"],
     "development": ["Python", "SQL", "PostgreSQL", "Oracle", "Unix/Shell", "VBA", "DAX", "APIs"],
     "uxMethods": [
-      "Entreposage de Données",
-      "Processus ETL/ELT",
-      "Modélisation de Données",
-      "Intelligence d'Affaires",
-      "Qualité des Données",
-      "Gouvernance de Données"
+      "Data Warehousing",
+      "ETL/ELT Processes",
+      "Data Modeling",
+      "Business Intelligence",
+      "Data Quality",
+      "Data Governance"
     ],
     "softSkills": [
-      "Gestion de Projet",
-      "Leadership d'Équipe",
-      "Méthodologie Agile",
-      "Communication Client",
-      "Résolution de Problèmes"
+      "Project Management",
+      "Team Leadership",
+      "Agile Methodology",
+      "Client Communication",
+      "Problem Solving"
     ]
   }
 }
